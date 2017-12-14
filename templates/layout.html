@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %} - Strangework</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div style="height:50px"></div>
+    <div style="margin: auto; width: 1120px; height: 142px; background-image: url({{ url_for('static', filename='menu.png')}});"></div>
+    <div id="content" style="background-image: url({{ url_for('static', filename='content.png') }})">{% block content %}{% endblock %}</div>
+    <div id="footer" style="background-image: url({{ url_for('static', filename='footer.png') }})">
+      {% block footer %}
+      <center>
+      </center>
+      {% endblock %}
+    </div>
+  </body>
+</html>

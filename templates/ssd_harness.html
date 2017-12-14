@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='twocolumns.css') }}">
+{% endblock %}
+{% block content %}
+  <div id="twocolheader">
+  <center> 
+  <h1>SSD Harness for Cooler Master  Caddies</h1>
+  </div>
+  <div height=600px id="leftcol">
+  </br>
+  <a href="{{ url_for('static', filename='ssd_harness/SSD Harness.zip') }}">Download</a>
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+  </br>
+  <p>&emsp;In the summer of 2017, I got myself one of those a shiny 1TB solid state drive. Only after receiving it in the mail did I realize that SSDs are typically a different form factor from HDDs. The 2.5in package is damn cute, but it couldn't possibly fit in my tower's drive bay. I could've just plugged the sucker in and let it dangle in the cavity of the drive bay, if only it didn't feel so sinful. In the end, I decided that the respectful thing to do would be to fabricate an over-the-top solution.</p>
+  </br>
+  <p>&emsp;My tower is some flavor of Cooler Master, which sports drive bays with removable drive caddies. The drive caddies neatly clips onto 3.5in drives, but is much too large to grip a 2.5in drive. The solution pictured on the right are two 3d-printed crossbars screwed onto the drive and clipped into the caddy. The pieces were printed with a Maker Select 3d, in white ABS. An imperfection in the bent crossbar prevents both screwholes from being used at the same time. This is either a flaw in my design, or an error during printing. Luckily, the rest of the build is quite sound and the assembled harness clicks together snugly. If the assembly is waved in the air, the drive doesn't rattle or budge.</p>
+</p>
+  </br>
+  </div>
+  <div height=600px id="rightcol">
+  <center>
+  <img class="framed" width=60% src="{{ url_for('static', filename='ssd_harness/ssd_harness_top.jpg') }}">
+  <img class="framed" width=60% src="{{ url_for('static', filename='ssd_harness/ssd_harness_bottom.jpg') }}">
+  <img class="framed" width=60% src="{{ url_for('static', filename='ssd_harness/ssd_harness_mounted.jpg') }}">
+  </center>
+  </div>
+{% endblock %}

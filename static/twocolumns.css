@@ -1,0 +1,17 @@
+div#twocolheader {
+  width: 100%;
+}
+
+div#leftcol {
+  float: left;
+  width: 55%;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+div#rightcol {
+  float: left;
+  width: 35%;
+  padding-left: 10px;
+  padding-right: 30px;
+}
