@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Philosopher);
+
+body {
+  background-color: #111111;
+  font-family: 'Philosopher';
+}
+
+h1 {
+  color: #0070BB;
+}
+
+h2 {
+  color: #0070BB;
+}
+
+p {
+  color: #0070BB;
+}
+
+b {
+  color: #0070BB;
+}
+
+a.track {
+  text-decoration: none;
+  color: #0070BB;
+}
+
+div#navbar {
+  float: left;
+  width: 30%;
+  height: 900px;
+  background-color: #333333;
+  padding: 20px;
+}
+
+div#action {
+  float: left;
+  width: 60%;
+  height: 900px;
+  background-color: #333333;
+  padding: 20px;
+}
