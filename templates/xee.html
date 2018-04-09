@@ -50,7 +50,7 @@
             // Replace existing comments
             $('#comments').empty();
             // Get comments from server
-            $.ajax("song/"+tracks[ndx].id)
+            $.ajax("xee/song/"+tracks[ndx].id)
               .done(function(comments) {
                 console.log(comments);
                 for (var i = 0; i < comments.length; i++) {
@@ -68,7 +68,7 @@
             $('#comment-submission').val('');
 
             $.ajax({
-              url: 'comment',
+              url: 'xee/comment',
               type: 'POST',
               contentType: 'application/json',
               data: JSON.stringify(comment)
