@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='twocolumns.css') }}">
+{% endblock %}
+{% block content %}
+  <div>
+  <center> 
+  <h1>My name is Nicholas Yang Chee</h1>
+  <p>I am a programmer, tinkerer, and dancer. This website will forever be under construction</p>
+  <p>Here's something I've made - <a href="ssd_harness">SSD harness</a></p>
+  <p>Here's other things - <a href="https://github.com/Strangework">github</a></p>
+  </center>
+  </div>
+{% endblock %}

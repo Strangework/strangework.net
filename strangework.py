@@ -7,8 +7,11 @@ import sqlite3
 
 app = flask.Flask(__name__)
 
-
 @app.route('/')
+def index():
+    return flask.render_template('index.html')
+
+@app.route('/ssd_harness')
 def ssd_harness():
     return flask.render_template('ssd_harness.html')
 

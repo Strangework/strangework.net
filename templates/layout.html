@@ -8,7 +8,13 @@
   </head>
   <body>
     <div style="height:50px"></div>
-    <div style="margin: auto; width: 1120px; height: 142px; background-image: url({{ url_for('static', filename='menu.png')}});"></div>
+    <div style="margin: auto; width: 1120px; height: 142px">
+      <img src="{{ url_for('static', filename='menu.png')}}" width="1120" height="142" usemap="#navmap">
+      <map name="navmap">
+        <area shape="poly" coords="691, 106, 691, 78, 729, 40, 859, 40, 859, 106" href="creations">
+        <area shape="poly" coords="868, 105, 868, 40, 1036, 40, 1036, 68, 999, 105" href="about">
+      </map>
+    </div>
     <div id="content" style="background-image: url({{ url_for('static', filename='content.png') }})">{% block content %}{% endblock %}</div>
     <div id="footer" style="background-image: url({{ url_for('static', filename='footer.png') }})">
       {% block footer %}
