@@ -11,10 +11,12 @@ h1 {
 }
 
 p {
-  color: #4b4b4b;
+  color: #2f2f2f;
 }
 
 body {
+  background-image: url("/static/background.png");
+  background-attachment: fixed;
   background-color: #575757;
 }
 
